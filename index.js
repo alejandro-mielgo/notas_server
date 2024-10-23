@@ -5,6 +5,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
+app._router.use(express.static('dist'))
 
 let notes = [
     {
